@@ -1,0 +1,140 @@
+*,
+:root {
+  box-sizing: border-box;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  align-items: center;
+  font-size: 16px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------Header-Layer----------------------------------------------------------*/
+
+.first-layer-header {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  align-items: center;
+
+  width: 600px;
+  height: 95px;
+  background-color: #6a1cc3;
+}
+
+.first-layer-header::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  background-color: #8849cf;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+
+/*-------------------------------Header-Layer-Ende---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------hamburger-logo------------------------------------------------------*/
+.header-logo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 3.3rem;
+  height: 3.2rem;
+  margin: 2rem 2rem 0 2.8rem;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  position: absolute;
+  background-color: white;
+  width: 3rem;
+  height: 0.35rem;
+
+  border-radius: 2rem;
+}
+.line-3 {
+  top: 2.4rem;
+  left: 0;
+}
+.line-2 {
+  top: 1.5rem;
+  left: 0;
+}
+.line-1 {
+  top: 0.7rem;
+  left: 0;
+}
+
+/*-----------------------------hamburger-logo-ende------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------Header-Text------------------------------------------------*/
+.header-text > h1 {
+  color: #fbfbfb;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 19px;
+  margin: 2rem 2.5rem 0 1rem;
+}
+/*-----------------------------Header-Text-End-------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------Header-Triangle-------------------------------------------*/
+.triangle {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+
+  width: 0px;
+  height: 0px;
+  border-top: 25px solid #6a1cc3;
+  border-right: 300px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 300px solid transparent;
+}
+.triangle:after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -18.7rem;
+  z-index: -1;
+
+  width: 0px;
+  height: 0px;
+  border-top: 25px solid #8849cf;
+  border-right: 300px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 300px solid transparent;
+}
+/*-----------------------------Header-Triangle-Ende------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.hub-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  border: 1px solid black;
+  max-width: 600px;
+  width: 600px;
+  height: 50rem;
+}

@@ -124,13 +124,17 @@ body {
 
 /*-----------------------------Header-Triangle-Ende------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------*/
+main {
+  background-color: var(--font-white);
+  z-index: 0;
+}
 .hub-wrapper {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-content: center;
   align-content: flex-start;
-  background-color: var(--font-white);
+
   align-items: center;
   background-color: var(--);
 
@@ -275,17 +279,19 @@ input[type="text"] {
   align-items: center;
   border-radius: 0.3rem;
   width: 100%;
+
   background-color: var(--font-white);
   border: 3px solid var(--main-color-dark);
   margin-bottom: 1.5rem;
 }
-.member:after {
+.member::after {
   position: absolute;
-  z-index: -1;
+
   top: 0.2rem;
   left: 0.2rem;
   content: "";
   width: 100%;
+  z-index: -1;
   height: 6rem;
   background-color: var(--main-color-dark);
   border-radius: 0.3rem;

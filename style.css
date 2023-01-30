@@ -163,6 +163,7 @@ body {
   font-weight: 600;
 }
 /*-----------------------------camp-students-text-ende-----------------------------------------*/
+/*-----------------------------search-container-----------------------------------------*/
 
 .search-container {
   position: relative;
@@ -174,8 +175,7 @@ body {
 }
 input[type="text"] {
   padding: 6px;
-  color: #4b148a61;
-  font-size: 20px;
+
   border: 3px solid #6a1cc3;
 
   font-style: normal;
@@ -203,4 +203,62 @@ input[type="text"] {
 }
 .search-container button:hover {
   background: #ccc;
+}
+/*-----------------------------select-----------------------------------------*/
+
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  height: 3rem;
+  gap: 1.3rem;
+  margin-top: 1.5rem;
+}
+.list-1,
+.list-2 {
+  display: flex;
+  border-radius: 2px;
+
+  width: 50%;
+  background-color: none;
+
+  color: #4b148a61;
+
+  border: 3px solid #6a1cc3;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 101.8%;
+  color: #6a1cc3;
+  padding: 0.4rem 0 0 1rem;
+}
+
+.select:after {
+  position: absolute;
+  content: "";
+  top: 0.1rem;
+  left: 12.4rem;
+  width: 2.5rem;
+  height: 2.8rem;
+
+  background-color: #8849cf;
+}
+/*-----------------------------member-----------------------------------------*/
+.camp-students-list {
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid black;
+  width: 600px;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+
+  width: 600px;
+
+  border: 1px solid green;
 }
